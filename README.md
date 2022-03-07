@@ -10,10 +10,6 @@ Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 
-### Screenshot
-
-![](./assets/img/screenshot.jpeg)
-
 ### Built with
 
 - Semantic HTML5 markup
