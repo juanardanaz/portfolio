@@ -146,12 +146,67 @@ img {
     height: auto;
 }
 
+.light_theme .nav_logo {
+    color: hsl(218, 14%, 15%);
+}
+
+.light_theme .nav_logo:hover {
+    color: hsl(230, 56%, 56%);
+}
+
+.light_theme .home_handle {
+    background: linear-gradient(180deg,
+                hsla(230, 56%, 56%, 1),
+                hsla(230, 56%, 56%, .2)
+    );
+}
+
+.light_theme .home_social_link:hover {
+    background-color: hsl(230, 56%, 56%);
+    color: #ffff;
+}
+
+.light_theme body {
+    background-color: #dee2e6;
+    color: hsl(218, 14%, 15%);
+    transition: .2s; /*Ligh-mode animation*/
+}
+
+.light_theme .about_icon {
+    color: hsl(230, 56%, 56%);
+}
+
+.light_theme .skills_title {
+    color: hsl(230, 56%, 56%);
+}
+
+.light_theme .skills .bxs-badge-check {
+    color: hsl(230, 56%, 56%);
+}
+
+.light_theme .services_button {
+    color: hsl(230, 56%, 56%);
+}
+
 .light_theme .scroll_header {
     box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
 }
 
 .light_theme .nav_menu {
     background-color: hsla(var(--second-hue), 32%, 90%, .8);
+}
+
+.light_theme .active-link {
+    background: linear-gradient(180deg, 
+                hsla(230, 56%, 56%, 1),
+                hsla(230, 56%, 56%, .2)
+                );
+    box-shadow: 0 0 16px hsla(230, 56%, 56%, .4);
+    color: var(--title-color);
+}
+
+.light_theme .change_theme:hover {
+    color: hsla(230, 56%, 56%, 1);
 }
 
 .light_theme .section_subtitle {
@@ -190,6 +245,60 @@ img {
     box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, .1);
 }
 
+.light_theme .button {
+    color: hsl(210, 17%, 98%);
+    background-color: hsl(230, 56%, 56%);
+}
+
+.light_theme .button:hover {
+    background-color: #ede8f4;
+    color: hsl(230, 56%, 56%);
+}
+
+.light_theme .button--ghost {
+    background-color: transparent;
+    border: 2px solid hsl(230, 56%, 56%);
+    color: hsl(230, 56%, 56%);
+}
+
+.light_theme .section_title,
+.light_theme .work_item,
+.light_theme .work_button {
+    color: hsl(230, 56%, 56%);
+}
+
+.light_theme .active_work {
+    background-color: hsl(230, 56%, 56%);
+    color: hsl(210, 17%, 98%);
+}
+
+.light_theme .swiper-pagination-bullet-active {
+    background-color: hsl(230, 56%, 56%);
+}
+
+.light_theme .contact_button {
+    color: hsl(230, 56%, 56%);
+}
+
+.light_theme  .footer {
+    background-color: hsl(230, 56%, 56%);
+}
+
+.light_theme .footer_title,
+.light_theme .footer_link {
+    color: hsl(210, 17%, 98%);
+}
+
+.light_theme .footer_copy {
+    color: hsl(210, 17%, 98%);
+    font: var(--smaller-font-size);
+}
+
+.light_theme .footer_social_link {
+    background-color: hsl(210, 17%, 98%);
+    color: hsl(230, 56%, 56%);
+}
+
 .light_theme::-webkit-scrollbar {
     background-color: hsl(var(--second-hue), 8%, 66%);
 } 
@@ -200,7 +309,7 @@ img {
 
 .light_theme::-webkit-scrollbar-thumb:hover {
     background-color: hsl(var(--second-hue), 8%, 44%);
-} 
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -260,7 +369,7 @@ img {
 .nav_logo {
     color: var(--first-color);
     font-weight: var(--font-medium);
-    transition: .4s;
+    transition: .2s;
 }
 
 .nav_logo:hover {
@@ -385,7 +494,7 @@ img {
     border-radius: .25rem;
     display: flex;
     font-size: 1rem;
-    transition: .4s;
+    transition: .2s;
 }
 
 .home_social_link:hover {
@@ -427,7 +536,7 @@ img {
     padding: .75rem 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
-    transition: .4s;
+    transition: .2s;
 }
 
 .button:hover {
@@ -585,7 +694,7 @@ img {
     place-items: center;
     visibility: hidden;
     opacity: 0;
-    transition: .4s;
+    transition: .2s;
     z-index: var(--z-modal);
 }
 
