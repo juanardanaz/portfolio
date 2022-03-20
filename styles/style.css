@@ -267,6 +267,12 @@ img {
     color: hsl(230, 56%, 56%);
 }
 
+.light_theme .services_modal_title,
+.light_theme .services_modal_icon,
+.light_theme .services_modal_close {
+    color: hsl(230, 56%, 56%);
+}
+
 .light_theme .active_work {
     background-color: hsl(230, 56%, 56%);
     color: hsl(210, 17%, 98%);
