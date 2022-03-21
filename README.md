@@ -1,6 +1,6 @@
 # My Portoflio
 
-This is a fisrt test of my portfolio website.
+This is a first test of my portfolio website.
 
 ## Overview
 

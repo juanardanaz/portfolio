@@ -1,4 +1,4 @@
-/* Fonts */
+/*=============== FONTS ===============*/
 @font-face {
     font-family: 'Poppins';
     src: url('../font/Poppins-Bold.woff2') format('woff2'),
@@ -50,12 +50,12 @@
     /* color: hsl(201, 100%, 36%); */
     /* color: hsl(343, 79%, 44%); */
 
-    --first-hue: 190;
-    --sat: 100%;
-    --lig: 42%;
+    --first-hue: 207;
+    --sat: 90%;
+    --lig: 72%;
     --second-hue: 219;
     --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-    --first-color-alt: hsl(var(--first-hue), var(--sat), 38%); /* -4% */
+    --first-color-alt: hsl(var(--first-hue), var(--sat), 68%); /* -4% */
     --title-color: hsl(var(--second-hue), 15%, 95%);
     --text-color: hsl(var(--second-hue), 8%, 75%);
     --text-color-light: hsl(var(--second-hue), 4%, 55%);
@@ -191,7 +191,7 @@ img {
     width: 100%;
     background-color: var(--body-color);
     z-index: var(--z-fixed);
-    transition: .2s; /*Ligh-mode animation*/
+    transition: .2s ease all; /*Ligh-mode animation*/
 }
 
 .nav {
@@ -468,7 +468,7 @@ img {
     column-gap: .5rem;
 }
 
-.skills .bxs-badge-check {
+.skills .bxs-label {
     color: var(--first-color);
     font-size: 1rem;
 }
@@ -830,6 +830,12 @@ img {
     display: inline-flex;
 }
 
+.footer_social_link:hover {
+    background-color: #ffff;
+    color: var(--body-color);
+    transition: .4s ease all;
+}
+
 .footer_copy {
     display: block;
     margin-top: 4.5rem;
@@ -869,7 +875,8 @@ img {
 body.light_theme {
     --title-color: hsl(var(--second-hue), 15%, 15%);
     --text-color: hsl(var(--second-hue), 8%, 35%);
-    --body-color: hsl(var(--second-hue), 100%, 99%);
+    /* --body-color: hsl(var(--second-hue), 100%, 99%); */
+    --body-color: hsl(197, 24%, 94%);
     --container-color: #ffff;
 }
 
@@ -907,7 +914,7 @@ body.light_theme {
     color: hsl(230, 56%, 56%);
 }
 
-.light_theme .skills .bxs-badge-check {
+.light_theme .skills .bxs-label {
     color: hsl(230, 56%, 56%);
 }
 
@@ -978,7 +985,7 @@ body.light_theme {
 }
 
 .light_theme .button:hover {
-    background-color: #ede8f4;
+    background-color: hsl(210, 17%, 98%);
     color: hsl(230, 56%, 56%);
 }
 
@@ -986,6 +993,12 @@ body.light_theme {
     background-color: transparent;
     border: 2px solid hsl(230, 56%, 56%);
     color: hsl(230, 56%, 56%);
+}
+
+.light_theme .button--ghost:hover {
+    background-color: hsl(230, 56%, 56%);
+    border: 2px solid hsl(230, 56%, 56%);
+    color: hsl(210, 17%, 98%);
 }
 
 .light_theme .section_title,
