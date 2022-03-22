@@ -372,6 +372,8 @@ img {
     border-radius: .5rem;
     font-weight: var(--font-medium);
     transition: .2s;
+    border: none;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -982,6 +984,7 @@ body.light_theme {
 .light_theme .button {
     color: hsl(210, 17%, 98%);
     background-color: hsl(230, 56%, 56%);
+    border: none;
 }
 
 .light_theme .button:hover {
