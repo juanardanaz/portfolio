@@ -205,6 +205,7 @@ img {
     color: var(--first-color);
     font-weight: var(--font-medium);
     transition: .2s;
+    width: 55px;
 }
 
 .nav_logo:hover {
@@ -800,6 +801,13 @@ img {
     padding: 2rem 0 6rem;
 }
 
+.footer_logo {
+    max-width: 40%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
 .footer_title,
 .footer_link {
     color: var(--body-color);
@@ -1104,6 +1112,10 @@ body.light_theme {
     .work_filters {
         column-gap: .25rem;
     }
+
+    .footer_logo {
+        max-width: 60%;
+    }
 }
 
 /* For medium devices */
@@ -1285,7 +1297,7 @@ body.light_theme {
     }
 
     .contact_container {
-        column-gap: 6rem;
+        column-gap: 0rem;
     }
 
     .footer_social_link {
