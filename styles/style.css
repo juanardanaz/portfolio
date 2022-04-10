@@ -808,9 +808,19 @@ img {
     padding-bottom: 15px;
 }
 
+.footer_logo:hover {
+    content: url("../assets/img/Logo_white_SVG.svg");
+    transition: .4s ease all;
+}
+
 .footer_title,
 .footer_link {
     color: var(--body-color);
+}
+
+.footer_link:hover {
+    color: #ffff;
+    transition: .4s ease all;
 }
 
 .footer_title {
@@ -885,7 +895,6 @@ img {
 body.light_theme {
     --title-color: hsl(var(--second-hue), 15%, 15%);
     --text-color: hsl(var(--second-hue), 8%, 35%);
-    /* --body-color: hsl(var(--second-hue), 100%, 99%); */
     --body-color: hsl(197, 24%, 94%);
     --container-color: #ffff;
 }
@@ -977,6 +986,15 @@ body.light_theme {
     color: var(--title-color);
 }
 
+.light_theme .footer_logo {
+    content: url("../assets/img/Logo_white_SVG.svg");
+}
+
+.light_theme .footer_logo:hover {
+    content: url("../assets/img/Logo_dark.svg");
+    transition: .4s ease all;
+}
+
 .light_theme .about_box {
     box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
@@ -1046,6 +1064,10 @@ body.light_theme {
     color: hsl(210, 17%, 98%);
 }
 
+.light_theme .footer_link:hover{
+    color: hsl(221, 46%, 8%);
+}
+
 .light_theme .footer_copy {
     color: hsl(210, 17%, 98%);
     font: var(--smaller-font-size);
@@ -1054,6 +1076,11 @@ body.light_theme {
 .light_theme .footer_social_link {
     background-color: hsl(210, 17%, 98%);
     color: hsl(230, 56%, 56%);
+}
+
+.light_theme .footer_social_link:hover {
+    background-color: hsl(221, 46%, 8%);
+    color: hsl(210, 17%, 98%);
 }
 
 .light_theme::-webkit-scrollbar {
