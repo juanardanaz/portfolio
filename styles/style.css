@@ -808,10 +808,10 @@ img {
     padding-bottom: 15px;
 }
 
-.footer_logo:hover {
+/* .footer_logo:hover {
     content: url("../assets/img/Logo_white_SVG.svg");
     transition: .4s ease all;
-}
+} */
 
 .footer_title,
 .footer_link {
@@ -895,7 +895,8 @@ img {
 body.light_theme {
     --title-color: hsl(var(--second-hue), 15%, 15%);
     --text-color: hsl(var(--second-hue), 8%, 35%);
-    --body-color: hsl(197, 24%, 94%);
+    /* --body-color: hsl(197, 24%, 94%); */
+    --body-color: hsl(230, 60%, 99%);
     --container-color: #ffff;
 }
 
@@ -990,10 +991,10 @@ body.light_theme {
     content: url("../assets/img/Logo_white_SVG.svg");
 }
 
-.light_theme .footer_logo:hover {
+/* .light_theme .footer_logo:hover {
     content: url("../assets/img/Logo_dark.svg");
     transition: .4s ease all;
-}
+} */
 
 .light_theme .about_box {
     box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
