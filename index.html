@@ -7,11 +7,11 @@
     <meta name="description" 
     content="This is a portfolio website,
             in which you can see my work, experience and projects.">
+    <!--=============== FAVICON ===============-->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/logo-icon-2.png">
     <title>Juan Cruz Ardanaz | Portfolio</title>
-    <!--=============== ICON ===============-->
-    <link rel="shortcut icon" href="./assets/img/logo-icon.png" type="image/x-icon">
     <!--=============== BOXICONS ===============-->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'> -->
     <!--=============== SWIPER ===============-->
     <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
     <!--=============== CSS ===============-->
@@ -20,431 +20,82 @@
 <body>
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
+        <!--=============== NAV ===============-->
         <nav class="nav container">
-
             
-            <a href="#" class="nav_logo"><img src="./assets/img/Logo_SVG.svg" alt="logo"></a>
+            <a href="#">
+                <img src="./assets/img/Logo_SVG.svg" alt="logo" class="nav_logo">
+            </a>
 
             <div class="nav_menu">
                 <ul class="nav_list">
                     <li class="nav_item">
-                        <a href="#home" class="nav_link active-link"><i class='bx bx-home-alt'></i></a>
+                        <a href="#work" class="nav_link">Work</a>
                     </li>
                 
                     <li class="nav_item">
-                        <a href="#about" class="nav_link"><i class='bx bx-user'></i></a>
-                    </li>
-                
-                    <li class="nav_item">
-                        <a href="#skills" class="nav_link"><i class='bx bx-book'></i></a>
-                    </li>
-                
-                    <li class="nav_item">
-                        <a href="#work" class="nav_link"><i class='bx bx-briefcase'></i></a>
-                    </li>
-                
-                    <li class="nav_item">
-                        <a href="#contact" class="nav_link"><i class='bx bx-message-square-detail'></i></a>
+                        <a href="#about" class="nav_link">About</a>
                     </li>
                 </ul>
+                <img src="./assets/img/bx-moon.svg" alt="moon" class='change_theme' id="theme-button">
             </div>
-
-            <i class='bx bx-moon change_theme' id="theme-button"></i>
         </nav>   
     </header>
 
     <!--=============== MAIN ===============-->
     <main class="main">
-        <!--=============== HOME ===============-->
-        <section class="home section" id="home">
-            <div class="home_container container grid">
-                <div class="home_data">
-                    <span class="home_greeting">Hello, I'm</span>
-                    <h1 class="home_name">Juan Cruz Ardanaz</h1>
-                    <p class="home_education">Audiovisual Designer | Frontend Developer</p>
+        <!--=============== INTRO SECTION ===============-->
+        <section class="intro section">
+            <div class="intro-container container">
+                <div class="intro-info">
 
-                    <div class="home_buttons">
-                        <a download="" href="./assets/pdf/Cv_Juan_Cruz_Ardanaz_2022.pdf" class="button button--ghost">Download CV</a>
-                        <a href="#about" class="button">About Me</a>
-                    </div>
-                </div>
+                    <div class="intro-text">
+                        <h1 class="intro-title">Hello, there! I'm Juan Cruz <span class="title-span">Ardanaz</span></h1>
+                        <p class="intro-description">A <span class="title-span">Multimedia Designer,</span> hailing from Argentina. 
+                            Interested in design & animation, technology & the form and complexity of <span class="title-span">eggs.</span>
+                        </p>
 
-                <div class="home_handle">
-                    <img src="./assets/img/perfil3.png" alt="user image" class="home_img">
-                </div>
+                        <div class="intro_buttons">
 
-                <div class="home_social">
-                    <a href="https://www.linkedin.com/in/juan-cruz-ardanaz" class="home_social_link" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-                    <a href="https://github.com/juanardanaz" class="home_social_link" target="_blank"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.behance.net/juanardanaz" class="home_social_link" target="_blank"><i class='bx bxl-behance'></i></a>
-                </div>
-
-                <a href="#about" class="home_scroll">
-                    <span class="home_scroll_name">More info</span>
-                    <i class='bx bx-down-arrow-alt home_scroll_icon'></i>
-                </a>
-            </div>
-        </section>
-        
-        <!--=============== ABOUT ===============-->
-        <section class="about section" id="about">
-            <span class="section_subtitle">My Intro</span>
-            <h2 class="section_title">About me</h2>
-
-            <div class="about_container container grid">
-                <img src="./assets/img/about3.png" alt="user profile pic" class="about_img">
-
-                <div class="about_data">
-                    <div class="about_info">
-
-                        <div class="about_box">
-                            <i class='bx bx-award about_icon'></i>
-                            <h3 class="about_title">Experience</h3>
-                            <span class="about_subtitle">+7 years working</span>
-                        </div>
-
-                        <div class="about_box">
-                            <i class='bx bx-desktop about_icon'></i>
-                            <h3 class="about_title">OS</h3>
-                            <span class="about_subtitle">Windows | MacOS</span>
-                        </div>
-
-                        <div class="about_box">
-                            <i class='bx bx-face about_icon'></i>
-                            <h3 class="about_title">Languages</h3>
-                            <span class="about_subtitle">English, Spanish</span>
-                        </div>
-                    </div>
-
-                    <p class="about_description">
-                        Audiovisual Designer and Frontend Developer Trainee. I have been working 
-                        for agencies and production companies, allowing me the opportunity 
-                        to have collaborated with a wide variety of clients.
-                    </p>
-                    <a href="#contact" class="button">Contact Me</a>
-                </div>
-            </div>
-        </section>
-
-        <!--=============== SKILLS ===============-->
-        <section class="skills section" id="skills">
-            <span class="section_subtitle">My Abilities</span>
-            <h2 class="section_title">My Skills</h2>
-
-            <div class="skills_container container grid">
-                <div class="skills_content">
-                    <h3 class="skills_title">Frontend Developer</h3>
-
-                    <div class="skills_box">
-                        <div class="skills_group">
-
-                            <div class="skills_data">
-                                <i class='bx bxs-label' ></i>
-
-                                <div>
-                                    <h3 class="skills_name">HTML</h3>
-                                    <span class="skills_level">Basic</span>
-                                </div>
-                            </div>
-
-                            <div class="skills_data">
-                                <i class='bx bxs-label' ></i>
-
-                                <div>
-                                    <h3 class="skills_name">CSS</h3>
-                                    <span class="skills_level">Basic</span>
-                                </div>
-                            </div>
-
-                            <div class="skills_data">
-                                <i class='bx bxs-label' ></i>
-
-                                <div>
-                                    <h3 class="skills_name">Javascript</h3>
-                                    <span class="skills_level">Basic</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="skills_group">
-
-                            <div class="skills_data">
-                                <i class='bx bxs-label' ></i>
-
-                                <div>
-                                    <h3 class="skills_name">Bootstrap</h3>
-                                    <span class="skills_level">Basic</span>
-                                </div>
-                            </div>
-
-                            <div class="skills_data">
-                                <i class='bx bxs-label' ></i>
-
-                                <div>
-                                    <h3 class="skills_name">Git</h3>
-                                    <span class="skills_level">Basic</span>
-                                </div>
-                            </div>
-
-                            <!-- <div class="skills_data">
-                                <i class='bx bxs-badge-check' ></i>
-
-                                <div>
-                                    <h3 class="skills_name">React</h3>
-                                    <span class="skills_level">Basic</span>
-                                </div>
-                            </div> -->
+                            <span class="button button--ghost resume_button">
+                                Download CV
+                            </span>
                             
+                            <input type="submit" class='contact-button button' value="Contact Me" onclick="window.location.href='mailto:juancruzardanaz@gmail.com'">
+                        
                         </div>
+                    </div>
+
+                </div>
+
+                <div class="resume_modal">
+                    <div class="resume_modal_content">
+                        <img src="./assets/img/bx-x.svg" alt="close icon" class='resume_modal_close'>
+
+                        <h3 class="resume_modal_title">CV Resume</h3>
+                        <p class="resume_modal_description">
+                            In which <span class="title-span">language</span> would you like to download my <span class="title-span">resume</span>?
+                        </p>
+
+                        <ul class="resume_modal_list">
+                            <li class="resume_modal_button">
+                                <a download="" href="./assets/pdf/Cv_Juan_Cruz_Ardanaz_ENG_2022.pdf" class="button">English</a>
+                            </li>
+
+                            <li class="resume_modal_button">
+                                <a download="" href="./assets/pdf/Cv_Juan_Cruz_Ardanaz_SPA_2022.pdf" class="button">Spanish</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="skills_content">
-                    <h3 class="skills_title">Multimedia Design</h3>
-
-                    <div class="skills_box">
-                        <div class="skills_group">
-
-                            <div class="skills_data">
-                                <i class='bx bxs-label' ></i>
-
-                                <div>
-                                    <h3 class="skills_name">Audition</h3>
-                                    <span class="skills_level">Basic</span>
-                                </div>
-                            </div>
-
-                            <div class="skills_data">
-                                <i class='bx bxs-label' ></i>
-
-                                <div>
-                                    <h3 class="skills_name">After Effects</h3>
-                                    <span class="skills_level">Advanced</span>
-                                </div>
-                            </div>
-
-                            <div class="skills_data">
-                                <i class='bx bxs-label' ></i>
-
-                                <div>
-                                    <h3 class="skills_name">Illustrator</h3>
-                                    <span class="skills_level">Advanced</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="skills_group">
-
-                            <div class="skills_data">
-                                <i class='bx bxs-label' ></i>
-
-                                <div>
-                                    <h3 class="skills_name">Photoshop</h3>
-                                    <span class="skills_level">Advanced</span>
-                                </div>
-                            </div>
-
-                            <div class="skills_data">
-                                <i class='bx bxs-label' ></i>
-
-                                <div>
-                                    <h3 class="skills_name">Premiere Pro</h3>
-                                    <span class="skills_level">Advanced</span>
-                                </div>
-                            </div>
-
-                            <!-- <div class="skills_data">
-                                <i class='bx bxs-badge-check' ></i>
-
-                                <div>
-                                    <h3 class="skills_name">React</h3>
-                                    <span class="skills_level">Intermediate</span>
-                                </div>
-                            </div> -->
-                            
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <!--=============== SERVICES ===============-->
-        <section class="services section">
-            <span class="section_subtitle">My Services</span>
-            <h2 class="section_title">What I Offer</h2>
-
-            <div class="services_container container grid">
-                <div class="services_card">
-                    <h3 class="services_title">Web <br> Development</h3>
-
-                    <span class="services_button">
-                        See more <i class='bx bx-right-arrow-alt services_icon'></i>
-                    </span>
-
-                    <div class="services_modal">
-                        <div class="services_modal_content">
-                            <i class='bx bx-x services_modal_close' ></i>
-
-                            <h3 class="services_modal_title">Web Development</h3>
-                            <p class="services_modal_description">
-                                I'm a trainee in this area, really interested and open to learn
-                            </p>
-
-                            <ul class="services_modal_list">
-                                <li class="services_modal_item">
-                                    <i class='bx bx-check services_modal_icon' ></i>
-                                    <p class="services_modal_info">
-                                        I develop the user interface.
-                                    </p>
-                                </li>
-
-                                <li class="services_modal_item">
-                                    <i class='bx bx-check services_modal_icon' ></i>
-                                    <p class="services_modal_info">
-                                        Web page development.
-                                    </p>
-                                </li>
-
-                                <li class="services_modal_item">
-                                    <i class='bx bx-check services_modal_icon' ></i>
-                                    <p class="services_modal_info">
-                                        I create ux element interactions.
-                                    </p>
-                                </li>
-
-                                <li class="services_modal_item">
-                                    <i class='bx bx-check services_modal_icon' ></i>
-                                    <p class="services_modal_info">
-                                        Design and mockups of products for companies.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="services_card">
-                    <h3 class="services_title">Audiovisual <br> Design</h3>
-
-                    <span class="services_button">
-                        See more <i class='bx bx-right-arrow-alt services_icon'></i>
-                    </span>
-
-                    <div class="services_modal">
-                        <div class="services_modal_content">
-                            <i class='bx bx-x services_modal_close' ></i>
-
-                            <h3 class="services_modal_title">Audiovisual Design</h3>
-                            <p class="services_modal_description">
-                                I offer more than 7 years of experience, working with a
-                                variety of clients and companies
-                            </p>
-
-                            <ul class="services_modal_list">
-                                <li class="services_modal_item">
-                                    <i class='bx bx-check services_modal_icon' ></i>
-                                    <p class="services_modal_info">
-                                        I edit raw video footage and add effects/elements to enhance motion graphics
-                                    </p>
-                                </li>
-
-                                <li class="services_modal_item">
-                                    <i class='bx bx-check services_modal_icon' ></i>
-                                    <p class="services_modal_info">
-                                        I work with editors, producers and other designers to resolve technical and/or design issues
-                                    </p>
-                                </li>
-
-                                <li class="services_modal_item">
-                                    <i class='bx bx-check services_modal_icon' ></i>
-                                    <p class="services_modal_info">
-                                        I work with art and creative teams to understand project scope and objectives
-                                    </p>
-                                </li>
-
-                                <li class="services_modal_item">
-                                    <i class='bx bx-check services_modal_icon' ></i>
-                                    <p class="services_modal_info">
-                                        Ability to work to a tight schedule
-                                    </p>
-                                </li>
-
-                                <li class="services_modal_item">
-                                    <i class='bx bx-check services_modal_icon' ></i>
-                                    <p class="services_modal_info">
-                                        Ability to translate ideas into complete projects
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="services_card">
-                    <h3 class="services_title">Motion Graphics <br> Design</h3>
-
-                    <span class="services_button">
-                        See more <i class='bx bx-right-arrow-alt services_icon'></i>
-                    </span>
-
-                    <div class="services_modal">
-                        <div class="services_modal_content">
-                            <i class='bx bx-x services_modal_close' ></i>
-
-                            <h3 class="services_modal_title">Motion Graphics Design</h3>
-                            <p class="services_modal_description">
-                                I offer more than 7 years of experience, working with a
-                                variety of clients and companies
-                            </p>
-
-                            <ul class="services_modal_list">
-                                <li class="services_modal_item">
-                                    <i class='bx bx-check services_modal_icon' ></i>
-                                    <p class="services_modal_info">
-                                        I create visually stunning video assets and content
-                                    </p>
-                                </li>
-
-                                <li class="services_modal_item">
-                                    <i class='bx bx-check services_modal_icon' ></i>
-                                    <p class="services_modal_info">
-                                        I collaborate with creative directors and other colleagues to best support larger media goals
-                                    </p>
-                                </li>
-
-                                <li class="services_modal_item">
-                                    <i class='bx bx-check services_modal_icon' ></i>
-                                    <p class="services_modal_info">
-                                        I like to take projects in order to deliver new and innovative solutions
-                                    </p>
-                                </li>
-
-                                <li class="services_modal_item">
-                                    <i class='bx bx-check services_modal_icon' ></i>
-                                    <p class="services_modal_info">
-                                        I research and analyze best design techniques and solutions to create motion graphics
-                                    </p>
-                                </li>
-
-                                <li class="services_modal_item">
-                                    <i class='bx bx-check services_modal_icon' ></i>
-                                    <p class="services_modal_info">
-                                        I create and deliver motion graphics in various media 
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--=============== WORK ===============-->
+        <!--=============== WORK SECTION ===============-->
         <section class="work section" id="work">
             <span class="section_subtitle">My Portfolio</span>
-            <h2 class="section_title">Recent Works</h2>
+            <h2 class="section_title">Selected Works</h2>
 
             <div class="work_filters">
                 <span class="work_item active_work" data-filter="all">All</span>
@@ -453,168 +104,228 @@
                 <span class="work_item" data-filter=".design">Design</span>
             </div>
 
-            <div class="work_container container grid">
-                <div class="work_card mix web">
-                    <img src="./assets/img/web1.png" alt="landing page" class="work_img">
+            <div class="projects_content grid" id="projects">
+                
+                <article class="projects_card mix web">
+                    <img src="./assets/img/web1.png" alt="landing page" class="projects_img">
+                    
+                    <div class="projects_modal">
+                        <div>
+                            <span class="projects_subtitle">Landing Page</span>
+                            <h2 class="projects_title">BD: Podcast Landing Page</h2>
+                            <a href="https://juanardanaz.github.io/" class="projects_button button" target="_blank">
+                                <img src="./assets/img/bx-link.svg" alt="link" class="projects_link">
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-                    <h3 class="work_title">BD: Podcast Landing Page</h3>
+                <article class="projects_card mix mobile">
+                    <img src="./assets/img/vimeo.png" alt="reel video" class="projects_img">
+                    
+                    <div class="projects_modal">
+                        <div>
+                            <span class="projects_subtitle">Reel Video</span>
+                            <h2 class="projects_title">Reel 2020</h2>
+                            <a href="https://vimeo.com/476119095" class="projects_button button" target="_blank">
+                                <img src="./assets/img/bx-link.svg" alt="link" class="projects_link">
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-                    <a href="https://juanardanaz.github.io/" class="work_button" target="_blank">
-                        See more <i class='bx bx-right-arrow-alt work_icon' ></i>
-                    </a>
-                </div>
+                <article class="projects_card mix web">
+                    <img src="./assets/img/web2.png" alt="web page" class="projects_img">
+                    
+                    <div class="projects_modal">
+                        <div>
+                            <span class="projects_subtitle">Web Page</span>
+                            <h2 class="projects_title">Lukto</h2>
+                            <a href="https://lukto.navarrolajous.com/" class="projects_button button" target="_blank">
+                                <img src="./assets/img/bx-link.svg" alt="link" class="projects_link">
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-                <div class="work_card mix mobile">
-                    <img src="./assets/img/vimeo.png" alt="video cover" class="work_img">
+                <article class="projects_card mix web">
+                    <img src="./assets/img/placa_sunnyside.png" alt="landing page" class="projects_img">
+                    
+                    <div class="projects_modal">
+                        <div>
+                            <span class="projects_subtitle">Landing Page</span>
+                            <h2 class="projects_title">Sunnyside Agency</h2>
+                            <a href="https://juanardanaz.github.io/sunnyside-agency/" class="projects_button button" target="_blank">
+                                <img src="./assets/img/bx-link.svg" alt="link" class="projects_link">
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-                    <h3 class="work_title">Reel 2020</h3>
+                <article class="projects_card mix web">
+                    <img src="./assets/img/placa_fylo.png" alt="landing page" class="projects_img">
+                    
+                    <div class="projects_modal">
+                        <div>
+                            <span class="projects_subtitle">Landing Page</span>
+                            <h2 class="projects_title">Fylo</h2>
+                            <a href="https://juanardanaz.github.io/" class="projects_button button" target="_blank">
+                                <img src="./assets/img/bx-link.svg" alt="link" class="projects_link">
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-                    <a href="https://vimeo.com/476119095" class="work_button" target="_blank">
-                        See more <i class='bx bx-right-arrow-alt work_icon' ></i>
-                    </a>
-                </div>
+                <article class="projects_card mix mobile">
+                    <img src="./assets/img/placa_telefe.png" alt="telefe" class="projects_img">
+                    
+                    <div class="projects_modal">
+                        <div>
+                            <span class="projects_subtitle">Reel Video: GFX</span>
+                            <h2 class="projects_title">Telefe</h2>
+                            <a href="https://www.youtube.com/watch?v=2PmOcq-3DXQ" class="projects_button button" target="_blank">
+                                <img src="./assets/img/bx-link.svg" alt="link" class="projects_link">
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-                <div class="work_card mix web">
-                    <img src="./assets/img/web2.png" alt="game company web" class="work_img">
+                <article class="projects_card mix design">
+                    <img src="./assets/img/plutotv_logo.png" alt="pluto tv" class="projects_img">
+                    
+                    <div class="projects_modal">
+                        <div>
+                            <span class="projects_subtitle">Design</span>
+                            <h2 class="projects_title">PlutoTv: Key Arts</h2>
+                            <a href="https://www.behance.net/gallery/139296217/PlutoTv-KeyArts" class="projects_button button" target="_blank">
+                                <img src="./assets/img/bx-link.svg" alt="link" class="projects_link">
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-                    <h3 class="work_title">Lukto</h3>
+                <article class="projects_card mix mobile">
+                    <img src="./assets/img/placa_paramount+.png" alt="paramount+" class="projects_img">
+                    
+                    <div class="projects_modal">
+                        <div>
+                            <span class="projects_subtitle">Reel Video</span>
+                            <h2 class="projects_title">Paramount+</h2>
+                            <a href="https://drive.google.com/file/d/1C5Hn-xqfvNtQ7Qp94HHhIpaB5ruIsh_O/view?usp=sharing" class="projects_button button" target="_blank">
+                                <img src="./assets/img/bx-link.svg" alt="link" class="projects_link">
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-                    <a href="https://lukto.navarrolajous.com/" class="work_button" target="_blank">
-                        See more <i class='bx bx-right-arrow-alt work_icon' ></i>
-                    </a>
-                </div>
+                <article class="projects_card mix design">
+                    <img src="./assets/img/placa_durlock.png" alt="Supermercado Dia" class="projects_img">
+                    
+                    <div class="projects_modal">
+                        <div>
+                            <span class="projects_subtitle">Motion Graphics</span>
+                            <h2 class="projects_title">Durlock RRSS</h2>
+                            <a href="https://www.behance.net/gallery/85222761/DURLOCK-Exsound" class="projects_button button" target="_blank">
+                                <img src="./assets/img/bx-link.svg" alt="link" class="projects_link">
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-                <div class="work_card mix web">
-                    <img src="./assets/img/placa_sunnyside.png" alt="sunnyside agency" class="work_img">
+                <article class="projects_card mix design">
+                    <img src="./assets/img/placa_dia.png" alt="Supermercado Dia" class="projects_img">
+                    
+                    <div class="projects_modal">
+                        <div>
+                            <span class="projects_subtitle">Motion Graphics</span>
+                            <h2 class="projects_title">DIA RRSS</h2>
+                            <a href="https://www.behance.net/gallery/85222875/DIA-Busqueda-Laboral" class="projects_button button" target="_blank">
+                                <img src="./assets/img/bx-link.svg" alt="link" class="projects_link">
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-                    <h3 class="work_title">Sunnyside Agency</h3>
+                <article class="projects_card mix mobile">
+                    <img src="./assets/img/placa_fundacionvidasilvestre.png" alt="fundacion vida silvestre" class="projects_img">
+                    
+                    <div class="projects_modal">
+                        <div>
+                            <span class="projects_subtitle">Motion Graphics</span>
+                            <h2 class="projects_title">#LaOtraRealidad</h2>
+                            <a href="https://www.youtube.com/watch?v=oPEKWRsGoFk" class="projects_button button" target="_blank">
+                                <img src="./assets/img/bx-link.svg" alt="link" class="projects_link">
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-                    <a href="https://juanardanaz.github.io/sunnyside-agency/" class="work_button" target="_blank">
-                        See more <i class='bx bx-right-arrow-alt work_icon' ></i>
-                    </a>
-                </div>
+                <article class="projects_card mix mobile">
+                    <img src="./assets/img/placa_colgate.png" alt="colgate" class="projects_img">
+                    
+                    <div class="projects_modal">
+                        <div>
+                            <span class="projects_subtitle">Motion Graphics</span>
+                            <h2 class="projects_title">Colgate RRSS</h2>
+                            <a href="https://www.behance.net/gallery/141761357/COLGATE" class="projects_button button" target="_blank">
+                                <img src="./assets/img/bx-link.svg" alt="link" class="projects_link">
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-                <div class="work_card mix mobile">
-                    <img src="./assets/img/placa_telefe.png" alt="telefe cover" class="work_img">
+                <article class="projects_card mix mobile">
+                    <img src="./assets/img/placa_greenlife.png" alt="green life" class="projects_img">
+                    
+                    <div class="projects_modal">
+                        <div>
+                            <span class="projects_subtitle">Motion Graphics</span>
+                            <h2 class="projects_title">Green Life: Animated Recipes</h2>
+                            <a href="https://www.behance.net/gallery/141762653/Green-Life-Animated-Recipes" class="projects_button button" target="_blank">
+                                <img src="./assets/img/bx-link.svg" alt="link" class="projects_link">
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-                    <h3 class="work_title">Reel Telefe 2020: GFX</h3>
+                <article class="projects_card mix mobile">
+                    <img src="./assets/img/placa_head.png" alt="head" class="projects_img">
+                    
+                    <div class="projects_modal">
+                        <div>
+                            <span class="projects_subtitle">Motion Graphics</span>
+                            <h2 class="projects_title">Head: New Models</h2>
+                            <a href="https://www.behance.net/gallery/141757423/HEAD" class="projects_button button" target="_blank">
+                                <img src="./assets/img/bx-link.svg" alt="link" class="projects_link">
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-                    <a href="https://www.youtube.com/watch?v=2PmOcq-3DXQ" class="work_button" target="_blank">
-                        See more <i class='bx bx-right-arrow-alt work_icon' ></i>
-                    </a>
-                </div>
+                <article class="projects_card mix mobile">
+                    <img src="./assets/img/placa_lg.png" alt="LG" class="projects_img">
+                    
+                    <div class="projects_modal">
+                        <div>
+                            <span class="projects_subtitle">Motion Graphics</span>
+                            <h2 class="projects_title">LG RRSS</h2>
+                            <a href="https://www.behance.net/gallery/141764005/LG-RRSS" class="projects_button button" target="_blank">
+                                <img src="./assets/img/bx-link.svg" alt="link" class="projects_link">
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-                <div class="work_card mix design">
-                    <img src="./assets/img/plutotv_logo.png" alt="plutotv cover" class="work_img">
-
-                    <h3 class="work_title">PlutoTv: KeyArts</h3>
-
-                    <a href="https://www.behance.net/gallery/139296217/PlutoTv-KeyArts" class="work_button" target="_blank">
-                        See more <i class='bx bx-right-arrow-alt work_icon' ></i>
-                    </a>
-                </div>
-
-                <div class="work_card mix mobile">
-                    <img src="./assets/img/placa_paramount+.png" alt="paramount cover" class="work_img">
-
-                    <h3 class="work_title">Reel Paramount+ 2020: GFX</h3>
-
-                    <a href="https://drive.google.com/file/d/1C5Hn-xqfvNtQ7Qp94HHhIpaB5ruIsh_O/view?usp=sharing" class="work_button" target="_blank">
-                        See more <i class='bx bx-right-arrow-alt work_icon' ></i>
-                    </a>
-                </div>
-
-                <div class="work_card mix design">
-                    <img src="./assets/img/placa_durlock.png" alt="durlock cover" class="work_img">
-
-                    <h3 class="work_title">Durlock: Exsound</h3>
-
-                    <a href="https://www.behance.net/gallery/85222761/DURLOCK-Exsound" class="work_button" target="_blank">
-                        See more <i class='bx bx-right-arrow-alt work_icon' ></i>
-                    </a>
-                </div>
-
-                <div class="work_card mix design">
-                    <img src="./assets/img/placa_dia.png" alt="durlock cover" class="work_img">
-
-                    <h3 class="work_title">DIA: Búsqueda Laboral</h3>
-
-                    <a href="https://www.behance.net/gallery/85222875/DIA-Busqueda-Laboral" class="work_button" target="_blank">
-                        See more <i class='bx bx-right-arrow-alt work_icon' ></i>
-                    </a>
-                </div>
-
-                <div class="work_card mix mobile">
-                    <img src="./assets/img/placa_fundacionvidasilvestre.png" alt="telefe cover" class="work_img">
-
-                    <h3 class="work_title">#LaOtraRealidad: GFX</h3>
-
-                    <a href="https://www.youtube.com/watch?v=oPEKWRsGoFk" class="work_button" target="_blank">
-                        See more <i class='bx bx-right-arrow-alt work_icon' ></i>
-                    </a>
-                </div>
-
-                <div class="work_card mix mobile">
-                    <img src="./assets/img/placa_colgate.png" alt="colgate cover" class="work_img">
-
-                    <h3 class="work_title">Colgate</h3>
-
-                    <a href="https://www.behance.net/gallery/141761357/COLGATE" class="work_button" target="_blank">
-                        See more <i class='bx bx-right-arrow-alt work_icon' ></i>
-                    </a>
-                </div>
-
-                <div class="work_card mix mobile">
-                    <img src="./assets/img/placa_greenlife.png" alt="greenlife cover" class="work_img">
-
-                    <h3 class="work_title">Green Life: Animated Recipes</h3>
-
-                    <a href="https://www.behance.net/gallery/141762653/Green-Life-Animated-Recipes" class="work_button" target="_blank">
-                        See more <i class='bx bx-right-arrow-alt work_icon' ></i>
-                    </a>
-                </div>
-
-                <div class="work_card mix mobile">
-                    <img src="./assets/img/placa_head.png" alt="head cover" class="work_img">
-
-                    <h3 class="work_title">Head</h3>
-
-                    <a href="https://www.behance.net/gallery/141757423/HEAD" class="work_button" target="_blank">
-                        See more <i class='bx bx-right-arrow-alt work_icon' ></i>
-                    </a>
-                </div>
-
-                <div class="work_card mix mobile">
-                    <img src="./assets/img/placa_lg.png" alt="lg cover" class="work_img">
-
-                    <h3 class="work_title">LG</h3>
-
-                    <a href="https://www.behance.net/gallery/141764005/LG-RRSS" class="work_button" target="_blank">
-                        See more <i class='bx bx-right-arrow-alt work_icon' ></i>
-                    </a>
-                </div>
             </div>
         </section>
 
-        <!--=============== TESTIMONIALS ===============-->
+        <!--=============== TESTIMONIAL SECTION ===============-->
         <section class="testimonial section" id="testimonial">
             <span class="section_subtitle">What people say</span>
             <h2 class="section_title">Testimonial</h2>
 
             <div class="testimonial_container container swiper">
                 <div class="swiper-wrapper">
-                    <div class="testimonial_card swiper-slide">
-                        <img src="./assets/img/testimonial_santi.png" alt="Santiago Gutierrez" class="testimonial_img">
-
-                        <h3 class="testimonial_name">Santiago Gutiérrez Quinzan</h3>
-                        <p class="testimonial_description rol">UX/UI Designer</p>
-                        <p class="testimonial_description">
-                            Juan es una persona EXCELENTE para trabajar. Muy atento, agradable y activo en el trabajo de equipo.
-                            Es una persona que te genera gusto ir a trabajar en grandes proyectos con su compañía.
-                            Una gran persona! 
-                        </p>
-                    </div>
-
                     <div class="testimonial_card swiper-slide">
                         <img src="./assets/img/testimonial_luk.png" alt="Lucas Neme" class="testimonial_img">
 
@@ -628,85 +339,77 @@
                         </p>
                     </div>
 
-                    <!-- <div class="testimonial_card swiper-slide">
-                        <img src="./assets/img/testimonial3.png" alt="" class="testimonial_img">
+                    <div class="testimonial_card swiper-slide">
+                        <img src="./assets/img/testimonial_santi.png" alt="Santiago Gutierrez" class="testimonial_img">
+
+                        <h3 class="testimonial_name">Santiago Gutiérrez Quinzan</h3>
+                        <p class="testimonial_description rol">UX/UI Designer</p>
+                        <p class="testimonial_description">
+                            Juan es una persona EXCELENTE para trabajar. Muy atento, agradable y activo en el trabajo de equipo.
+                            Es una persona que te genera gusto ir a trabajar en grandes proyectos con su compañía.
+                            Una gran persona! 
+                        </p>
+                    </div>
+
+                    <div class="testimonial_card swiper-slide">
+                        <img src="./assets/img/testimonial_lucho.jpg" alt="Luciano Marco Viani" class="testimonial_img">
+
+                        <h3 class="testimonial_name">Luciano Marco Viani</h3>
+                        <p class="testimonial_description rol">Area Sales Representative</p>
+                        <p class="testimonial_description">
+                            Juan es una persona EXCELENTE para trabajar. Muy atento, agradable y activo en el trabajo de equipo.
+                            Es una persona que te genera gusto ir a trabajar en grandes proyectos con su compañía.
+                            Una gran persona! 
+                        </p>
+                    </div>
+
+                    <div class="testimonial_card swiper-slide">
+                        <img src="./assets/img/testimonial_lucperrone.jpg" alt="Lucas Perrone" class="testimonial_img">
 
                         <h3 class="testimonial_name">Lucas Perrone</h3>
+                        <p class="testimonial_description rol">Agencia Sangre</p>
                         <p class="testimonial_description">
-                            A really good job, all aspects of the project were 
-                            followed step by step and with good results.
+                            Contactamos a Juan para un proyecto con nuestra agencia, y su aporte fue excelente. 
+                            Siempre atento y con muy buena actitud para cada idea que desarrollamos, una predisposición 
+                            de 10 y siempre con fluidez a la hora de hacer entregas y proponer ideas.  
                         </p>
-                    </div> -->
+                    </div>
                 </div>
 
                 <div class="swiper-pagination"></div>
             </div>
         </section>
 
-        <!--=============== CONTACT ===============-->
-        <section class="contact section" id="contact">
-            <span class="section_subtitle">Get in touch</span>
-            <h2 class="section_title">Contact Me</h2>
+        <!--=============== ABOUT SECTION ===============-->
+        <section class="about section" id="about">
+            <span class="section_subtitle">My Info</span>
+            <h2 class="section_title">About me</h2>
 
-            <div class="contact_container container grid">
-                <div class="contact_content">
-                    <h3 class="contact_title">Talk to me</h3>
-
-                    <div class="contact_info">
-                        <div class="contact_card">
-                            <i class='bx bxl-gmail contact_card_icon' ></i>
-                            <h3 class="contact_card_title">Email</h3>
-                            
-
-                            <a href="mailto:juancruzardanaz@gmail.com" target="_blank" class="contact_button">
-                                Write me <i class='bx bx-right-arrow-alt contact_button_icon' ></i>
-                            </a>
-                        </div>
-
-                        <div class="contact_card">
-                            <i class='bx bxl-linkedin-square contact_card_icon'></i>
-                            <h3 class="contact_card_title">Linkedin</h3>
-
-                            <a href="https://www.linkedin.com/in/juan-cruz-ardanaz" target="_blank" class="contact_button">
-                                Write me <i class='bx bx-right-arrow-alt contact_button_icon' ></i>
-                            </a>
-                        </div>
-
-                        <div class="contact_card">
-                            <!-- <i class='bx bxl-linkedin-square contact_card_icon'></i> -->
-                            <i class='bx bxl-discord-alt contact_card_icon'></i>
-                            <h3 class="contact_card_title">Discord</h3>
-
-                            <a href="https://discordapp.com/users/USERID" target="_blank" class="contact_button">
-                                Write me <i class='bx bx-right-arrow-alt contact_button_icon' ></i>
-                            </a>
-                        </div>
-                    </div>
+            <div class="about_container container grid">
+                <div class="about_handle">
+                    <img src="./assets/img/perfil4.png" alt="user image" class="about_img">
                 </div>
 
-                <!-- <div class="contact_content">
-                    <h3 class="contact_title">Write me</h3>
+                <div class="about_data">
+                    <p class="about_description">
+                        In the last years, I have been working 
+                        for agencies and production companies, allowing me the opportunity 
+                        to have collaborated with a wide variety of clients.
+                    </p>
 
-                    <form action="mailto:juancruzardanaz@gmail.com" class="contact_form">
+                    <p class="about_description">
+                        I have a great capacity and constant interest in learning, 
+                        with great interest in design and technology, in constant search of challenges.
+                        I adapt easily to new groups and I feel very comfortable working 
+                        in a team and always focused on achieving the best results.
+                    </p>
 
-                        <div class="contact_form_div">
-                            <label for="" class="contact_form_tag">Name</label>
-                            <input type="text" placeholder="Insert your name" class="contact_form_input" required>
-                        </div>
-
-                        <div class="contact_form_div">
-                            <label for="" class="contact_form_tag">Mail</label>
-                            <input type="email" placeholder="Insert your email" class="contact_form_input" required>
-                        </div>
-
-                        <div class="contact_form_div .contact_form_area">
-                            <label for="" class="contact_form_tag">Project</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your project" class="contact_form_input" required></textarea>
-                        </div>
-
-                        <input type="submit" value="Send Message" class="button">
-                    </form>
-                </div> -->
+                    <p class="about_description">
+                        In my spare time, I study languages, I do social volunteering and go on long bicycle rides. 
+                        I also love to swim, read and design interesting projects. I'm always open to new opportunities.
+                        Let's get in touch!
+                    </p>
+                </div>
             </div>
         </section>
     </main>
@@ -715,7 +418,7 @@
     <footer class="footer">
         <div class="footer_container container">
             
-            <a href="#"><img src="./assets/img/Logo_dark.svg" alt="logo" class="footer_logo"></a>
+            <a href="#"><img src="./assets/img/Logo_SVG.svg" alt="logo" class="footer_logo"></a>
 
             <ul class="footer_list">
                 <li>
@@ -734,25 +437,25 @@
             <ul class="footer_social">
                 <li>
                     <a href="https://www.linkedin.com/in/juan-cruz-ardanaz" class="footer_social_link" target="_blank">
-                        <i class='bx bxl-linkedin-square'></i>
+                        <img src="./assets/img/bxl-linkedin.svg" alt="linkedin" class="footer_social_icon">
                     </a>
                 </li>
                 
                 <li>
                     <a href="https://github.com/juanardanaz" class="footer_social_link" target="_blank">
-                        <i class='bx bxl-github'></i>
+                        <img src="./assets/img/bxl-github.svg" alt="github" class="footer_social_icon">
                     </a>
                 </li>
                 
                 <li>
                     <a href="https://www.behance.net/juanardanaz" class="footer_social_link" target="_blank">
-                        <i class='bx bxl-behance'></i>
+                        <img src="./assets/img/bxl-behance.svg" alt="behance" class="footer_social_icon">
                     </a>
                 </li>
                 
                 <li>
-                    <a href="https://vimeo.com/user24057574" class="footer_social_link" target="_blank">
-                        <i class='bx bxl-vimeo' ></i>
+                    <a href="https://discordapp.com/users/USERID" class="footer_social_link" target="_blank">
+                        <img src="./assets/img/bxl-discord-alt.svg" alt="discord" class="footer_social_icon">
                     </a>
                 </li>
             </ul>
