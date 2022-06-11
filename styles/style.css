@@ -38,8 +38,10 @@
 :root {
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
-    --first-color: hsl(230, 56%, 56%);
-    --first-color-alt: hsl(230, 51%, 61%);
+    /* --first-color: hsl(230, 56%, 56%); */
+    --first-color: hsl(163, 100%, 33%);
+    /* --first-color-alt: hsl(230, 51%, 61%); */
+    --first-color-alt: hsl(189, 75%, 75%);
     --title-color: hsl(219, 15%, 95%);
     --text-color: hsl(219, 8%, 75%);
     --text-color-light: hsl(219, 4%, 55%);
@@ -390,7 +392,7 @@ h1,h2,h3 {
 
 .work_item {
     cursor: pointer;
-    color: var(--first-color-alt);
+    color: var(--first-color);
     padding: .25rem .75rem;
     font-weight: var(--font-medium);
     font-family: var(--body-font-a);
