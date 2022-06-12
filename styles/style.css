@@ -39,9 +39,9 @@
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
     /* --first-color: hsl(230, 56%, 56%); */
-    --first-color: hsl(167, 100%, 33%);
+    --first-color: hsl(167, 100%, 28%);
     /* --first-color-alt: hsl(230, 51%, 61%); */
-    --first-color-alt: hsl(154, 53%, 57%);
+    --first-color-alt: hsl(154, 53%, 45%);
     --title-color: hsl(219, 15%, 95%);
     --text-color: hsl(219, 8%, 75%);
     --text-color-light: hsl(219, 4%, 55%);
