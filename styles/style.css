@@ -38,10 +38,12 @@
 :root {
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
-    /* --first-color: hsl(230, 56%, 56%); */
-    --first-color: hsl(167, 100%, 28%);
-    /* --first-color-alt: hsl(230, 51%, 61%); */
-    --first-color-alt: hsl(154, 53%, 45%);
+    /* --first-color: hsl(230, 56%, 56%); violet*/
+    /* --first-color-alt: hsl(230, 51%, 61%); violet*/
+    /* --first-color: hsl(167, 100%, 28%); green */
+    /* --first-color-alt: hsl(154, 53%, 45%); green  */
+    --first-color: hsl(210, 98%, 33%);
+    --first-color-alt: hsl(200, 100%, 38%);
     --title-color: hsl(219, 15%, 95%);
     --text-color: hsl(219, 8%, 75%);
     --text-color-light: hsl(219, 4%, 55%);
@@ -200,7 +202,7 @@ h1,h2,h3 {
 }
 
 .nav_logo {
-    width: 20%;
+    width: 17%;
     cursor: pointer;
     transform: translateY(4px);
 }
@@ -347,7 +349,7 @@ h1,h2,h3 {
     right: 1.5rem;
     font-size: 1.5rem;
     /* filter: invert(45%) sepia(20%) saturate(2577%) hue-rotate(199deg) brightness(84%) contrast(92%); */
-    filter: invert(48%) sepia(30%) saturate(7317%) hue-rotate(138deg) brightness(95%) contrast(101%);
+    filter: invert(21%) sepia(74%) saturate(2669%) hue-rotate(198deg) brightness(89%) contrast(98%);
     cursor: pointer;
 }
 
@@ -373,13 +375,18 @@ h1,h2,h3 {
 
 .button:hover {
     background-color: var(--first-color-alt);
-    color: var(--first-color);
+    /* color: var(--first-color); */
 }
 
 .button--ghost {
     background-color: transparent;
     border: 2px solid var(--first-color);
     color: var(--first-color);
+}
+
+.button--ghost:hover {
+    color: var(--white);
+    border: 2px solid var(--first-color-alt);
 }
 
 /*=============== WORK SECTION  ===============*/
@@ -520,7 +527,7 @@ h1,h2,h3 {
     width: 190px;
     height: 293px;
     background: linear-gradient(180deg,
-                hsla(163, 100%, 33%, 1),
+                hsla(210, 100%, 35%, 1),
                 hsla(230, 51%, 61%, .2)
     );
     border-radius: 10rem 10rem 1rem 1rem;
@@ -623,7 +630,7 @@ h1,h2,h3 {
 
 .footer_social_icon:hover {
     /* filter: invert(45%) sepia(20%) saturate(2577%) hue-rotate(199deg) brightness(84%) contrast(92%); */
-    filter: invert(48%) sepia(30%) saturate(7317%) hue-rotate(138deg) brightness(95%) contrast(101%);
+    filter: invert(21%) sepia(74%) saturate(2669%) hue-rotate(198deg) brightness(89%) contrast(98%);
 }
 
 /*=============== SCROLL BAR ===============*/
