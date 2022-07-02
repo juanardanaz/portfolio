@@ -461,6 +461,7 @@ h1,h2,h3 {
 
 .projects_button {
     padding: .5rem;
+    display: inline-flex;
 }
 
 .projects_card:hover .projects_modal {
