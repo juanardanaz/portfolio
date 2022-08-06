@@ -690,7 +690,7 @@ body.dark-theme {
 }
 
 .dark-theme .footer_logo {
-    filter: invert(1%) sepia(5%) saturate(50%) hue-rotate(153deg) brightness(20%) contrast(90%);
+    filter: invert(56%) sepia(11%) saturate(1495%) hue-rotate(177deg) brightness(25%) contrast(100%);
 }
 
 .dark-theme .footer_social_icon {
@@ -766,10 +766,11 @@ body.dark-theme {
         grid-template-columns: repeat(2, max-content);
         justify-content: center;
         column-gap: 3rem;
+        align-items: center;
     }
 
     .footer_logo {
-        max-width: 30%;
+        max-width: 25%;
     }
 }
 
@@ -824,9 +825,9 @@ body.dark-theme {
         align-content: space-evenly;
     }
 
-    .about_description {
+    /* .about_description {
         margin-bottom: -2rem;
-    }
+    } */
 
     .footer_container {
         padding: 4rem 0 6rem;
