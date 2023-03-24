@@ -115,3 +115,18 @@ sr.reveal(`.work`, {delay: 500, origin: 'bottom'});
 sr.reveal(`.testimonial`, {delay: 500});
 sr.reveal(`.about`, {delay: 800});
 sr.reveal(`.footer_container`, {delay: 900})
+
+
+/*=============== TAB TITLE CHANGE ===============*/
+let previousTitle = document.title;
+
+// Message when the user leaves to another tab
+window.addEventListener('blur', () => {
+    previousTitle = document.title;
+    document.title = 'Don´t go! Come back! 😱'
+});
+
+// Message when the user returns
+window.addEventListener('focus', () => {
+    document.title = previousTitle;
+});
